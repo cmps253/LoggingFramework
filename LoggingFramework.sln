@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Driver", "LoggingFramework\Driver.csproj", "{5406445A-617A-4EFA-B19B-209A7AD076A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleLoggerLib", "Logger253\ConsoleLoggerLib.csproj", "{2BA9E546-4E5D-4587-B924-653C50BB3E28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileLoggerLib", "FileLoggerLib\FileLoggerLib.csproj", "{7FBEC0C2-5339-49CA-97A2-F9F24440F5DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Logging", "Logging", "{3201B24B-2B3B-48DF-A816-5A1FECE83B43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllLogger", "AllLogger\AllLogger.csproj", "{DE578868-7022-4CA6-8045-D3A867114DA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerCore", "LoggerCore\LoggerCore.csproj", "{55361E8E-0AD4-4795-9832-3D2B82B94263}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5406445A-617A-4EFA-B19B-209A7AD076A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5406445A-617A-4EFA-B19B-209A7AD076A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5406445A-617A-4EFA-B19B-209A7AD076A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5406445A-617A-4EFA-B19B-209A7AD076A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BA9E546-4E5D-4587-B924-653C50BB3E28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BA9E546-4E5D-4587-B924-653C50BB3E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BA9E546-4E5D-4587-B924-653C50BB3E28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BA9E546-4E5D-4587-B924-653C50BB3E28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FBEC0C2-5339-49CA-97A2-F9F24440F5DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FBEC0C2-5339-49CA-97A2-F9F24440F5DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FBEC0C2-5339-49CA-97A2-F9F24440F5DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FBEC0C2-5339-49CA-97A2-F9F24440F5DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE578868-7022-4CA6-8045-D3A867114DA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE578868-7022-4CA6-8045-D3A867114DA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE578868-7022-4CA6-8045-D3A867114DA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE578868-7022-4CA6-8045-D3A867114DA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55361E8E-0AD4-4795-9832-3D2B82B94263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55361E8E-0AD4-4795-9832-3D2B82B94263}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55361E8E-0AD4-4795-9832-3D2B82B94263}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55361E8E-0AD4-4795-9832-3D2B82B94263}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2BA9E546-4E5D-4587-B924-653C50BB3E28} = {3201B24B-2B3B-48DF-A816-5A1FECE83B43}
+		{7FBEC0C2-5339-49CA-97A2-F9F24440F5DF} = {3201B24B-2B3B-48DF-A816-5A1FECE83B43}
+		{DE578868-7022-4CA6-8045-D3A867114DA1} = {3201B24B-2B3B-48DF-A816-5A1FECE83B43}
+		{55361E8E-0AD4-4795-9832-3D2B82B94263} = {3201B24B-2B3B-48DF-A816-5A1FECE83B43}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {617D9688-4230-4AD6-926B-31D592D9ECD9}
+	EndGlobalSection
+EndGlobal
