@@ -1,23 +1,41 @@
 ﻿using Logger253;
+using LoggerCore;
 using LoggingFramework;
 
 namespace Driver
 {
-    public class AllLogger
+    public enum LogOutputEnum
     {
-        private string _fileName;
-        private ConsoleLogger _consoleLogger;
-        private FileLogger _fileLogger;
-        public AllLogger(string fileName)
+        File,
+        Console,
+        Both
+    }
+    public class AllLogger : BaseLogger
+    {
+        List<ILogger> _loggers = new();
+        public AllLogger(string fileName, LogOutputEnum output)
         {
-            _fileName = fileName;
-            _consoleLogger = new ConsoleLogger();
-            _fileLogger = new FileLogger(fileName);
+            switch (output)
+            {
+                case LogOutputEnum.File:
+                    _loggers.Add(new FileLogger(fileName));
+                    break;
+                case LogOutputEnum.Console:
+                    _loggers.Add(new ConsoleLogger());
+                    break;
+                default:
+                case LogOutputEnum.Both:
+                    _loggers.Add(new FileLogger(fileName));
+                    _loggers.Add(new ConsoleLogger());
+                    break;
+            }
         }
-        public void Log(string msg)
+        public override void Log(string msg)
         {
-            _consoleLogger.Log(msg);
-            _fileLogger.Log(msg);
+            foreach (var logger in _loggers)
+            {
+                logger.Log(msg);
+            }
         }
     }
 }
